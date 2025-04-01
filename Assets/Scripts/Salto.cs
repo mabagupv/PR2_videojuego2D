@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class Salto : MonoBehaviour
 {
 
-    public float velocidad = 1.0f;
+    public float salto = 1.0f;
+
+    bool puedoSaltar = false;
   
     // Start is called before the first frame update
     void Start()
@@ -19,22 +22,19 @@ public class Salto : MonoBehaviour
     void Update()
     {
 
-        transform.Translate(velocidad,0,0);
-        //transform.Rotate(0,0,velocidad);
-        //transform.localScale = new Vector3(velocidad, 1.0f, 1.0f);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position,Vector2.down, 0.6f);
 
-        //Ir a la izquierdas
-        /*
-        if(Input.GetKey(KeyCode.A)){
-            transform.Translate(velocidad*-1,0,0);
+        Debug.DrawRay(transform.position,Vector2.down, Color.red, 0.6f);
+
+        if (hit.collider == null){
+            puedoSaltar = false;
+        }else{
+            puedoSaltar = true;
         }
 
-
-        if(Input.GetKey(KeyCode.D)){
-            transform.Translate(velocidad, 0 , 0);
+        if(Input.GetKeyDown(KeyCode.Space) && puedoSaltar){
+            this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,salto),ForceMode2D.Impulse);
         }
-
-*/
 
     }
 

@@ -21,6 +21,22 @@ public class Movimiento : MonoBehaviour
         //movTeclas = 1/-1
         //Time.deltatime = ? 0.0001
         float MovTeclas = Input.GetAxis("Horizontal");
+
+        //Flip personaje Derecga
+        if(MovTeclas > 0){
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            this.GetComponent<Animator>().SetBool("activaCamina", true);
+        }
+        //Flip personaje izquierda
+        if(MovTeclas < 0){
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            this.GetComponent<Animator>().SetBool("activaCamina", true);
+        }
+
+        if(MovTeclas == 0){
+            this.GetComponent<Animator>().SetBool("activaCamina", false);
+        }
+
         
         float velocidadFinal = (velocidad * MovTeclas) * Time.deltaTime;
 
