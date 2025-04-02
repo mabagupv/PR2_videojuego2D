@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ground-Additional_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 323
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d47a8cd2e022345b5620cb53b9e635
+      internalID: 670154555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-Additional_1
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 323
+        width: 284
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d940db12e1b3e49938ce9b91b5f312
+      internalID: 1218591767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-Additional_2
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 323
+        width: 120
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d758929a208db488951f544cc91656
+      internalID: -1240139419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-Additional_3
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 323
+        width: 320
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a471e1127398af478e4420aa9ab44c9
+      internalID: -1175004118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-Additional_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1
+        width: 306
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d88bb2aed69dd0419132639a4b71452
+      internalID: 2075098492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-Additional_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1
+        width: 302
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e785f231fa09294e8d6e59b0b6560d9
+      internalID: 1557892076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground-Additional_6
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1
+        width: 121
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29e5cdceb343134aa7b1b86da17687d
+      internalID: -196137949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +253,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ground-Additional_0: 670154555
+      Ground-Additional_1: 1218591767
+      Ground-Additional_2: -1240139419
+      Ground-Additional_3: -1175004118
+      Ground-Additional_4: 2075098492
+      Ground-Additional_5: 1557892076
+      Ground-Additional_6: -196137949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

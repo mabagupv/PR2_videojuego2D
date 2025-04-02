@@ -16,6 +16,9 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.estoyVivo == false){
+            return;
+        }
 
         //velocidad = 1
         //movTeclas = 1/-1
@@ -42,7 +45,7 @@ public class Movimiento : MonoBehaviour
 
         transform.Translate(velocidadFinal, 0f, 0f);
 
-        Debug.Log(MovTeclas);
+        //Debug.Log(MovTeclas);
 
     }
 }
