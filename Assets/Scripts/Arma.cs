@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class Arma : MonoBehaviour
 {
 
-    public static int vida = 3;
-    public static int marcador = 0;
-    public static bool estoyVivo = true;
+    public GameObject bala;
 
     // Start is called before the first frame update
     void Start()
@@ -18,15 +16,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if( vida <= 0){
-            estoyVivo = false;
+        
+        if(Input.GetKeyDown(KeyCode.E)){
+            Instantiate(bala, transform.position, Quaternion.identity);
         }
 
 
-        //Debug.Log("Monedas: "+ marcador);
-
     }
-
-
 }

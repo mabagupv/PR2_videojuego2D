@@ -24,6 +24,8 @@ public class Salvado : MonoBehaviour
         spawn.transform.position = transform.position;
         GameManager.vida = GameManager.vida+1; 
     }
+
+    
     /*
     void OnCollisionEnter2D(Collision2D col)
     {

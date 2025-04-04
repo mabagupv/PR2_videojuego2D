@@ -6,6 +6,7 @@ public class Movimiento : MonoBehaviour
 {
 
     public float velocidad = 1;
+    public bool direccionBalaDcha = true;
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +26,17 @@ public class Movimiento : MonoBehaviour
         //Time.deltatime = ? 0.0001
         float MovTeclas = Input.GetAxis("Horizontal");
 
-        //Flip personaje Derecga
+        //Flip personaje Derecha
         if(MovTeclas > 0){
             this.GetComponent<SpriteRenderer>().flipX = false;
             this.GetComponent<Animator>().SetBool("activaCamina", true);
+            direccionBalaDcha = true;
         }
         //Flip personaje izquierda
         if(MovTeclas < 0){
             this.GetComponent<SpriteRenderer>().flipX = true;
             this.GetComponent<Animator>().SetBool("activaCamina", true);
+            direccionBalaDcha = false;
         }
 
         if(MovTeclas == 0){
