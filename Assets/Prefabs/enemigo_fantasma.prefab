@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4720643930698483413}
   - component: {fileID: 6529252120235111835}
   - component: {fileID: 262607552087809737}
+  - component: {fileID: 7029632027581893155}
   m_Layer: 0
   m_Name: enemigo_fantasma
   m_TagString: Untagged
@@ -98,6 +99,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d9479e3b961ce4e8de8a59b1eae53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidaFantasma: 10
+  velocidad: 1
+  limiteDerecha: 5
+  limiteIzquierda: 5
+  distanciaAtaque: 5
+  distanciaPatrol: 15
+  velocidadAtaque: 2
 --- !u!70 &262607552087809737
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -133,3 +141,30 @@ CapsuleCollider2D:
   m_Offset: {x: -0.041522622, y: -0.008517504}
   m_Size: {x: 0.33307385, y: 0.42889524}
   m_Direction: 0
+--- !u!50 &7029632027581893155
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30016373660852014}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
