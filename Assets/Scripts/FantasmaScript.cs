@@ -27,6 +27,8 @@ public class FantasmaScript : MonoBehaviour
 
     public float velocidadAtaque = 2;
 
+    AudioSource fantasmaAudioManager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,9 @@ public class FantasmaScript : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
 
+        fantasmaAudioManager = this.GetComponent<AudioSource>();
+
+        
 
     }
 
@@ -101,6 +106,12 @@ public class FantasmaScript : MonoBehaviour
                 transform.position, player.transform.position, velocidadAtaque*Time.deltaTime
             );
 
+
+                if(fantasmaAudioManager.isPlaying == false){
+                    fantasmaAudioManager.PlayOneShot(AudioManagerScript.Instance.sFantasma);
+                }
+           
+        
             if(player.transform.position.x <= transform.position.x){
                 this.GetComponent<SpriteRenderer>().flipX = false;
             }else{
@@ -116,6 +127,8 @@ public class FantasmaScript : MonoBehaviour
     {
         if(col.gameObject.tag == "Player"){
             GameManager.vida -= 1;
+            //AudioManagerScript.Instance.SuenaClip(AudioManagerScript.Instance.sFantasma);
+       
         }
     }
 

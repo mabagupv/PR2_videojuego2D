@@ -10,7 +10,7 @@ public class Goals : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,8 +26,10 @@ public class Goals : MonoBehaviour
         if(col.tag == "Player"){
 
             GameManager.marcador = GameManager.marcador+valor;
-
             this.GetComponent<Animator>().SetBool("destruirMoneda", true);
+            
+            AudioManagerScript.Instance.SuenaClip(AudioManagerScript.Instance.moneda);
+
             Destroy(this.gameObject, 1.0f);
         }
 

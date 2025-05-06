@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,10 +10,12 @@ public class GameManager : MonoBehaviour
     public static int marcador = 0;
     public static bool estoyVivo = true;
 
+    private GameObject vidasText;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        vidasText = GameObject.Find("TextoVidas");
     }
 
     // Update is called once per frame
@@ -21,10 +24,14 @@ public class GameManager : MonoBehaviour
 
         if( vida <= 0){
             estoyVivo = false;
+       
         }
 
+        vidasText.GetComponent<TextMeshProUGUI>().text = vida.ToString();
 
         //Debug.Log("Monedas: "+ marcador);
+
+
 
     }
 
