@@ -369,7 +369,7 @@ SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabAsset: {fileID: 2}
   m_GameObject: {fileID: 44162702}
   m_Enabled: 1
   m_CastShadows: 0
@@ -415,7 +415,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &157883080
 GameObject:
   m_ObjectHideFlags: 0
