@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//esto tmambioen es un cambio
+
+
+
 public class Spawn : MonoBehaviour
 {
     GameObject spawn;
