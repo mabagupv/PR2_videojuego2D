@@ -4,37 +4,27 @@ using UnityEngine;
 
 public class Goals : MonoBehaviour
 {
-
     public int valor = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        //hola mundo
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    void Update() { }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        
-        if(col.tag == "Player"){
-
-            GameManager.marcador = GameManager.marcador+valor;
+        if (col.tag == "Player")
+        {
+            GameManager.marcador = GameManager.marcador + valor;
             this.GetComponent<Animator>().SetBool("destruirMoneda", true);
-            
+
             AudioManagerScript.Instance.SuenaClip(AudioManagerScript.Instance.moneda);
 
             Destroy(this.gameObject, 1.0f);
         }
-
     }
-
-
-
 }

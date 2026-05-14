@@ -11,12 +11,16 @@ public class Movimiento : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        MensajeConRetardo();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        Debug.Log(this.name);
+
+
         if(GameManager.estoyVivo == false){
             return;
         }
@@ -51,4 +55,17 @@ public class Movimiento : MonoBehaviour
         //Debug.Log(MovTeclas);
 
     }
+
+
+    async void MensajeConRetardo()
+    {
+        Debug.Log("Esperando 3 segundos...");
+        await Awaitable.WaitForSecondsAsync(3f);
+        Debug.Log("¡Han pasado 3 segundos!");
+        await Awaitable.WaitForSecondsAsync(2f);
+        Debug.Log("¡Han pasado 5 segundos!");
+    }
+
+
+
 }
