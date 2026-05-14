@@ -6,6 +6,7 @@ public class Arma : MonoBehaviour
 {
 
     public GameObject bala;
+    public float velocidadBala = 10f;
 
     // Start is called before the first frame update
     void Start()
